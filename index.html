@@ -70,7 +70,9 @@
       <!--Hero section-->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <button type="button" class="hero-button" data-modal-open>
+          Замовити послугу
+        </button>
       </section>
       <!--Advantages section-->
       <section class="section">
@@ -132,29 +134,39 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list list">
-            <li class="item">
-              <img
-                src="./img/what-we-do/example1.jpg"
-                alt="Приклад роботи 1"
-                width="370"
-                height="294"
-              />
+            <li class="work-item">
+              <div class="work-thumb">
+                <img
+                  src="./img/what-we-do/example1.jpg"
+                  alt="Приклад роботи 1"
+                  width="370"
+                  height="294"
+                />
+
+                <p class="work-text">Десктопні додатки</p>
+              </div>
             </li>
-            <li class="item">
-              <img
-                src="./img/what-we-do/example2.jpg"
-                alt="Приклад роботи 2"
-                width="370"
-                height="294"
-              />
+            <li class="work-item">
+              <div class="work-thumb">
+                <img
+                  src="./img/what-we-do/example2.jpg"
+                  alt="Приклад роботи 2"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">Мобільні додатки</p>
+              </div>
             </li>
-            <li class="item">
-              <img
-                src="./img/what-we-do/example3.jpg"
-                alt="Приклад роботи 3"
-                width="370"
-                height="294"
-              />
+            <li class="work-item">
+              <div class="work-thumb">
+                <img
+                  src="./img/what-we-do/example3.jpg"
+                  alt="Приклад роботи 3"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -583,5 +595,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="close-button-svg" width="18" height="18">
+            <use href="./img/svg/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
